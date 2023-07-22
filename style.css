@@ -8,7 +8,7 @@ html {
   }
 
 :root {
-    --gris: #999898;
+    --gris: #838383;
 
     --open-sans: 'Open Sans', sans-serif;
     --poppins: 'Poppins', sans-serif;
@@ -34,10 +34,10 @@ body {
 
 nav {
     width: 100%;
-    height: 60px;
+    height: auto;
     display: flex;
-    justify-content: space-between;
-    background-color: #7e7d7d;
+    flex-direction: column;
+    background-color: #504f4f;
     align-items: center;
     font-family: var(--poppins);
     position:fixed;
@@ -45,17 +45,20 @@ nav {
 }
 
 .nav__logo {
-    width: 60px;
-    margin-left: 10px;
+    width: 59px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     display: block;
 
 }
 
 .nav__links {
     display: flex;
-    gap: 12px;
-    margin-right: 10px;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
     font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .nav__link {
@@ -115,15 +118,15 @@ nav {
     display: none;
 }
 
-.hero__wave {
+/* .hero__wave {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 60px;
+  height:  40px;
   width: 100%;
   background-image: url(images/wave.svg);
 
-}
+} */
 
 
 /*diseños*/
@@ -173,7 +176,7 @@ nav {
 
 .descubre {
     background-color: rgb(59, 59, 59);
-    height: 85vh;
+    height: 80vh;
     text-shadow: 0 0 10px white;
 }
 
@@ -189,8 +192,10 @@ nav {
 .descubre__title {
     font-family: var(--poppins);
     margin: 30px 0 15px; 
+    padding: 20px;
     color: white;
     font-size: 25px;
+    text-align: center;
 }
 
 .text {
@@ -300,26 +305,32 @@ button:active {
     margin: 10px auto;
 }
 
-@media (min-width:720px) {
+@media (min-width:961px) {
 
 
     .nav__links {
-        margin: 0 30px;
-        gap: 25px;
+        flex-direction: row;
+        margin: auto 20px;
+        gap:30px;
     }
 
     .nav__logo {
-        margin: 0 30px;
+        margin: auto 20px;
     }
 
     nav {
         height: 70px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
     }
 
 
 
     .hero__container{
         background-image: linear-gradient(
+
             0deg,
             rgba(0,0,0,0.5),
             rgb(0, 0, 0)
@@ -327,7 +338,7 @@ button:active {
         )
         ,url(images/gtr-r4.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: center center;
         background-repeat: no-repeat;
         height: 100vh;
         margin: 0;
@@ -369,14 +380,57 @@ button:active {
     }
 
     .diseños__logo {
-        width: 25vw;
-       height: 25vh;
+        width: 100%;
+        height: 100%;
     }
 
     .hero__picture {
        margin-left: auto;
-       
+       height: 250px;
+       width: 500px;
         align-items: center;
         
+    }
+
+
+    .descubre {
+       
+    }
+
+    .descubre__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;
+        height: 70%;
+        width: 80vw;
+        margin: auto;
+        overflow: hidden;
+        font-size: 0.9em;
+       
+    }
+
+    .descubre p {
+        display: block;
+    }
+
+    .text{
+        margin-top: 15px;
+    }
+
+    .volante__contenido {
+        height: 100%;
+    }
+
+    .sueños__contenido{
+        height: 100%;
+    }
+
+    .pasion__contenido {
+        height: 100%;
+    }
+
+    button {
+        display: none;
     }
 }

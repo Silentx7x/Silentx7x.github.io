@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+:root {
+    --gris: #999898;
+
+    --open-sans: 'Open Sans', sans-serif;
+    --poppins: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--gris);
+}
+
+.container {
+    padding: 10px 0;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.hero {
+    max-width: 1100px;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7e7d7d;
+    align-items: center;
+    font-family: var(--poppins);
+    position:fixed;
+    z-index: 100;
+}
+
+.nav__logo {
+    width: 60px;
+    margin-left: 10px;
+    display: block;
+
+}
+
+.nav__links {
+    display: flex;
+    gap: 12px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.nav__link:active {
+    color: red;
+} 
+
+.hero__container {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: linear-gradient(
+            
+            0deg,
+            rgba(0,0,0,0.5),
+            rgb(0, 0, 0)
+
+        )
+        ,url(images/encabezado.jpg);    
+
+}
+
+.hero__texts {
+    width: 90%;
+    text-align: center;
+    letter-spacing: .13px;
+        
+    color: white;
+}
+
+.hero__title {
+    margin-bottom: 10px;
+    text-shadow: 0 0 3px ;
+    font-family: var(--poppins);
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero__paragraft {
+    font-weight: 600;
+}
+
+.hero__img {
+    display: none;
+}
+
+.hero__wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 60px;
+  width: 100%;
+  background-image: url(images/wave.svg);
+
+}
+
+
+/*diseños*/
+
+.diseños {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.diseños__contenido {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.contenido__title {
+    font-family: var(--poppins);
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+    text-shadow: 0 0 3px;
+    
+}
+
+.contenido__text {
+    letter-spacing: .15px;
+}
+
+.hero__picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.diseños__logo {
+    height: 170px;
+    border-radius: 10px;
+    margin: 35px auto;
+    box-shadow: 0 0 10px;
+}
+
+
+
+
+.descubre {
+    background-color: rgb(59, 59, 59);
+    height: 85vh;
+    text-shadow: 0 0 10px white;
+}
+
+.descubre__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    gap: 35px;
+    
+}
+
+.descubre__title {
+    font-family: var(--poppins);
+    margin: 30px 0 15px; 
+    color: white;
+    font-size: 25px;
+}
+
+.text {
+    display: none;
+}
+
+.volante__contenido {
+    background-image: linear-gradient(
+            
+    0deg,
+    rgba(0,0,0,0.5),
+    rgb(0, 0, 0)
+
+    )
+    ,url(images/volante.jpg);    
+    background-size: cover;
+    background-position: center center;
+    height: 150px;
+    width: 95%;
+    padding: 50px;
+    margin: 0 auto;
+    color: white;
+    border-radius: 15px;
+}
+
+.sueños__contenido {
+    background-image: linear-gradient(
+            
+    0deg,
+    rgba(0,0,0,0.5),
+    rgb(0, 0, 0)
+
+    )
+    ,url(images/sueño.png);    
+    background-size: cover;
+    background-position: center center;
+    height: 150px;
+    width: 95%;
+    padding: 50px;
+    margin: 0 auto;
+    color: white;
+    border-radius: 15px;
+}
+
+.pasion__contenido {
+    background-image: linear-gradient(
+            
+    0deg,
+    rgba(0,0,0,0.5),
+    rgb(0, 0, 0)
+
+    )
+    ,url(images/pasion.jpg);    
+    background-size: cover;
+    background-position: center center;
+    height: 150px;
+    width: 95%;
+    padding: 50px;
+    margin: 0 auto;
+    color: white;
+    border-radius: 15px;
+}
+
+button {
+    margin: 10px 0;
+    background-color: rgb(54, 54, 54);
+    border-radius: 5px;
+    padding: 5px 19px;
+    font-weight: bold;
+    color:white;
+    box-shadow: 0 0 10px black;
+    font-size: 15px;
+}
+
+button:active {
+    background-color: rgb(42, 43, 43);
+}
+
+#footer {
+    
+}
+
+.footer__links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    gap: 10px;
+    width: 100%;
+
+}
+
+.footer__text {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.footer__img {
+    width: 55px;
+    margin: 0 auto 10px;
+}
+
+.footer__copyright {
+    color: rgb(22, 22, 22);
+    font-size: 14px;
+    margin: 10px auto;
+}
+
+@media (min-width:720px) {
+
+
+    .nav__links {
+        margin: 0 30px;
+        gap: 25px;
+    }
+
+    .nav__logo {
+        margin: 0 30px;
+    }
+
+    nav {
+        height: 70px;
+    }
+
+
+
+    .hero__container{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgb(0, 0, 0)
+
+        )
+        ,url(images/gtr-r4.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero__texts {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        text-align: start;
+        margin-right: auto;
+        margin-left: 200px;
+        text-align: center;
+    }
+
+    .hero__img {
+        display: block;
+        width: 11vw;
+        margin-right: auto;
+    }
+
+    #diseños {
+        display: flex;
+        height: 80vh;
+        align-items: center;
+        flex-direction: row-reverse;
+
+    }
+
+    .diseños__contenido {
+        margin-left: auto;
+        width: 30%;
+      
+    }
+
+    .contenido__title {
+        margin-top: 0;
+    }
+
+    .diseños__logo {
+        width: 25vw;
+       height: 25vh;
+    }
+
+    .hero__picture {
+       margin-left: auto;
+       
+        align-items: center;
+        
+    }
+}
